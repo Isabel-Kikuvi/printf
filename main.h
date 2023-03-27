@@ -40,6 +40,7 @@ struct fmt
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
+<<<<<<< HEAD
 int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
 
@@ -113,5 +114,12 @@ int is_digit(char);
 
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
+void print_binary(unsigned int, num);
+int print_d(va_list list);
+int print_i(va_list list);
+int print_unsigned(va_list list);
+int print_octal(va_list list);
+int print_hex(va_list list);
+int print_HEX(va_list list);
 
 #endif
